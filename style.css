@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    position: relative; 
+    overflow: hidden;
+}
+.hero-section{
+    width: 60%;
+    height: 100%;
+    padding: 20px 40px;
+    background-color: #FBC50B;
+    position: relative;
+    overflow: hidden;
+}
+#logo,img{
+    height: 60px;
+}
+.hero-title,h4{
+    font-family:Orbitron ;
+    font-size:15px;
+    letter-spacing: 7px;
+    margin-top:90px;
+}
+.hero-heading,h1{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 90px;
+}
+.hero-paragraph,p{
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 25px;
+}
+.hero-pageholder{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.line{
+    width:40px;
+    height:2px;
+    background-color: black;
+}
+.hero-pageholder,h2{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+}
+.pokeball-icon {
+
+    position: absolute;
+    bottom: -180px; 
+    left: 30px;
+    
+  
+    width: 200px;
+    height: 290px;
+    
+ 
+    opacity: 0.15; 
+    
+    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23000000' stroke-width='8'/%3E%3Cline x1='5' y1='50' x2='95' y2='50' stroke='%23000000' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='18' fill='%23FBC50B' stroke='%23000000' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%23000000'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    pointer-events: none;
+}
+.side-hero {
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    background-color: #FBE8B2;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    position: relative;
+}
+
+#icon {
+    height: 60px;
+    width: 60px;
+}
+
+.ri-menu-line {
+    font-size: 60px; 
+}
+
+
+.slider-navigation {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    border: none;
+    background-color: #E2CE97; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.nav-dot:hover {
+    background-color: #000000;
+}
+
+
+.nav-dot.active {
+    background-color: #000000; 
+    transform: scale(1.2);
+}
+.character-overlay {
+    position: absolute;
+    bottom: 5%;        
+    left: 57%;         
+    transform: translateX(-45%);  
+    height: 89%;       
+    z-index: 10;       
+    pointer-events: none; 
+}
+
+
+#pikachu-img {
+    height: 100%;       
+    width: auto;      
+    object-fit: contain;
+}
